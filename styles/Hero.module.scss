@@ -1,0 +1,60 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  @include flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  background-image: url(../public/bghero.jpg);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: top; overflow: hidden;
+  padding-inline: 1rem;
+  h1 {
+    text-align: center;
+    font-size: calc(2rem + 0.5vh);
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #f81e06,#ef086a);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p {
+    color: #ececec;
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+  .btn_container {
+    margin-top: 2rem;
+    @include flex;
+    * {
+      color: white;
+      font-size: 1rem;
+      background:  #f21143;
+      border:  #f21143;
+      padding: 10px 20px;
+      border: 2px #f21143 solid;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: block;
+      &:hover {
+        outline: none;
+        background: transparent;
+        transform: translateY(-10px);
+      }
+    }
+  }
+  .btn_container > * + * {
+    margin-left: 1rem;
+    background: transparent;
+    &:hover {
+      background:  #f21143;
+    }
+  }
+}

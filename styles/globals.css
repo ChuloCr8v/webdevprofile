@@ -11,6 +11,19 @@ a {
   text-decoration: none;
 }
 
-* {
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-size: 1.05rem;
+}
+
+li {
+  list-style: none;
 }

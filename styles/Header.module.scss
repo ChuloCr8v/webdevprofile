@@ -1,0 +1,16 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding-block: 1rem;
+}
+
+.container {  
+  @include flex;
+  justify-content: space-between;
+  width: min(90%, 80rem);
+  margin: auto;
+}
