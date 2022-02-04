@@ -1,0 +1,66 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  max-width: 400px;
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin-block: 4rem;
+  color: #000;
+}
+
+.form_group {
+  @include flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 1rem;
+  label {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.3rem 1rem;
+    background: rgb(243, 242, 242);
+    border: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    transition: all 0.3s;
+    &:hover {
+      border-color: red;
+    }
+    &:focus {
+      outline: none;
+      border: 2px red solid;
+    }
+  }
+}
+
+.submit_group {
+  margin-block: 1rem;
+  position: relative;
+  @include flex;
+  input {
+    width: 100%;
+    color: #fff;
+    background: #000;
+    border-radius: 8px;
+    padding-block: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background: #07c407;
+    }
+  }
+  .icon {
+    color: white;
+    position: absolute;
+    margin-left: 5rem;
+  }
+}

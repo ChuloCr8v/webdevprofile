@@ -1,30 +1,55 @@
-import styles from '../styles/Services.module.scss'
-import {FaGlobe, FaShoppingCart, FaPen} from 'react-icons/fa'
+import styles from "../styles/Services.module.scss";
+import { FaGlobe, FaShoppingCart, FaPen } from "react-icons/fa";
+import Heading from "./Heading";
+
 const Services = () => {
   return (
-      <section className={styles.services}>
+    <section className={styles.services}>
+      <div className={styles.container}>
+        <Heading text={"What we do"} />
         <div className={styles.service}>
           <FaGlobe className={styles.icon} />
-          <h3>Website Development </h3>
-          <p> We design and develop highly responsive, beautiful and scalable websites for all businesses and organisations.</p>
+          <h3>Website Development/Re-Design </h3>
+          <p>
+            {" "}
+            We design and develop highly responsive, beautiful and scalable
+            websites for all businesses and organisations. We also improve
+            already exisiting websites for faster loading time and improved
+            modern appearnace.
+          </p>
         </div>
         <div className={styles.service}>
           <FaShoppingCart className={styles.icon} />
           <h3>Ecommerce Store Development</h3>
-          <p> We build online shopping platforms for your online businesses, enabling you to target customers throughout the globe.</p>
+          <p>
+            {" "}
+            We design and develop online shopping platforms for your online
+            businesses, enabling you to target customers throughout the globe.
+            We work with varying ecommerce platforms including WooCommerce,
+            Shopify, BigCommerce and other platforms of your choice.
+          </p>
         </div>
         <div className={styles.service}>
           <FaPen className={styles.icon} />
           <h3>Content Creation</h3>
-          <p>We are also involved in the creation of content that are targeted towards your intended clients. </p>
+          <p>
+            We create well tailored contents suitable for passing whatever
+            message you have for your clients to keep them enagaged as well as
+            discover important information about your brands and services.
+          </p>
         </div>
         <div className={styles.service}>
           <FaGlobe className={styles.icon} />
           <h3>Website SE0</h3>
-          <p>Our contents are SEO compliant and will rank your business on Google pages, giving you a wider outreach.</p>
+          <p>
+            Our contents are SEO compliant and will rank your business on Google
+            pages, giving you a wider outreach at the same time, targetting your
+            desired customers.
+          </p>
         </div>
-      </section>
-    )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Services
+export default Services;

@@ -15,13 +15,26 @@ html {
   scroll-behavior: smooth;
 }
 
+/* * {
+  border: 2px red solid;
+} */
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.05rem;
+  font-size: calc(0.9rem + 0.5vh);
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5;
+  letter-spacing: 0.7pt;
 }
 
 li {
