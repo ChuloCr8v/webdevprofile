@@ -5,8 +5,8 @@ import Heading from "./Heading";
 const Services = () => {
   return (
     <section className={styles.services}>
+      <Heading text={"What we do"} />
       <div className={styles.container}>
-        <Heading text={"What we do"} />
         <div className={styles.service}>
           <FaGlobe className={styles.icon} />
           <h3>Website Development/Re-Design </h3>
