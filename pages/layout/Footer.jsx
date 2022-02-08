@@ -10,7 +10,21 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <h1>Logo</h1>
+        <div className={styles.about}>
+          <h1>Logo</h1>
+          <p>
+            <span>
+              Clever Developers, we are a website design and development company
+              dedicated to helping businesses and brands boost their online
+              presence and increase their reach.
+            </span>{" "}
+            {/* We specialize in the design and building of modern, stunning and
+            fast loading websites for different businesses and brands. we are a
+            professional team of experts determined to give your brand a
+            deserved online presence through the creation of bespoke websites as
+            well as SEO services. */}
+          </p>
+        </div>
         <nav className={styles.nav}>
           <h2 className={styles.subheading}>Menu</h2>
           <ol className={styles.menu}>

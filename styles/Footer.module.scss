@@ -25,6 +25,17 @@
   flex-direction: column;
 }
 
+.about {
+  p {
+    margin-top: 2rem;
+    span {
+      font-weight: 800;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
 .nav {
   margin: 2rem 0;
 }
@@ -93,9 +104,9 @@
   }
   .container {
     width: 100%;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
   }
 
   .nav {
