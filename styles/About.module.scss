@@ -18,8 +18,23 @@
 }
 
 .about_us {
-  margin-top: 3rem;
   h3 {
     margin-top: -0.5rem;
+  }
+}
+
+.copy {
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 688px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .copy {
+    margin-top: 0;
   }
 }
