@@ -14,11 +14,10 @@
   background-size: cover;
   background-position: top;
   overflow: hidden;
-  padding-inline: 1rem;
   h1 {
     text-align: center;
     font-size: calc(2rem + 0.5vh);
-    font-weight: bold;
+    font-weight: 900;
     background-image: linear-gradient(90deg, #f81e06, #ef086a);
     background-size: 100%;
     background-repeat: repeat;
@@ -40,7 +39,7 @@
       border: #f21143;
       padding: 10px 20px;
       border: 2px #f21143 solid;
-      border-radius: 20px;
+      border-radius: 10px;
       transition: all 0.3s ease;
       cursor: pointer;
       display: block;
@@ -51,11 +50,7 @@
       }
     }
   }
-  .btn_container > * + * {
-    margin-left: 1rem;
-    background: transparent;
-    &:hover {
-      background: #f21143;
-    }
-  }
+}
+.container {
+  padding: 1rem;
 }

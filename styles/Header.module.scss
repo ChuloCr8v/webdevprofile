@@ -5,12 +5,12 @@
 }
 
 .header {
-  padding-block: 1rem;
+  padding: 1rem 0;
 }
 
-.container {  
+.container {
   @include flex;
   justify-content: space-between;
-  width: min(90%, 80rem);
+  max-width: 85%;
   margin: auto;
 }
