@@ -14,3 +14,9 @@
   max-width: 85%;
   margin: auto;
 }
+
+@media (min-width: 900px) {
+  .icon {
+    display: none;
+  }
+}

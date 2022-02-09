@@ -50,3 +50,28 @@
 .menu * + * {
   margin-top: 0.6rem;
 }
+
+@media (min-width: 900px) {
+  .nav,
+  .open_nav {
+    position: relative;
+    background: transparent;
+    height: 0;
+  }
+
+  .close_icon {
+    display: none;
+  }
+  .menu {
+    @include flex;
+  }
+
+  .menu_item {
+    color: black;
+  }
+
+  .menu * + * {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
