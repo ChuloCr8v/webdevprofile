@@ -10,6 +10,11 @@ const Header = () => {
     window.addEventListener("resize", () => {
       screen.width > 900 ? setShowMenu(true) : setShowMenu(false);
     });
+    return () => {
+      window.removeEventListener("resize", () => {
+        screen.width > 900 ? setShowMenu(true) : setShowMenu(false);
+      });
+    };
   }, []);
 
   return (

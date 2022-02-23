@@ -3,6 +3,7 @@ import { FaPaperPlane } from "react-icons/fa";
 const Contact = () => {
   return (
     <form className={styles.form}>
+      <h3 className={styles.title}>Leave a message!</h3>
       <div className={styles.form_group}>
         <label htmlFor="name">Name</label>
         <input

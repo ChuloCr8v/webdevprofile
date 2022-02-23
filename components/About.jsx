@@ -8,9 +8,9 @@ const About = () => {
         <div className={styles.about_us}>
           <Heading text={"About Us"} />
           <h3>
-            Clever Developers, we are a website design and development company
-            dedicated to helping businesses and brands boost their online
-            presence and increase their reach.
+            We are a website design and development agency dedicated to helping
+            businesses and brands boost their online presence and increase their
+            reach.
           </h3>
           <p>
             We specialize in the design and building of modern, stunning and

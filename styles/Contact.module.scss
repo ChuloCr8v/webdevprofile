@@ -8,7 +8,8 @@
   @include flex;
   flex-direction: column;
   margin-top: 50px;
-  background: linear-gradient(40deg, #013b86, #87abee, #062529);
+  background: #000;
+  // background: linear-gradient(40deg, #013b86, #87abee, #062529);
   color: white;
   padding-top: 4rem;
   img {
@@ -35,10 +36,11 @@
   padding-top: 1rem;
   padding-bottom: 4rem;
   max-width: 85%;
-  h3 {
+  .h3 {
     font-size: 1.3rem;
-    color: #e6e4e4;
+    color: #c5c1c1;
     text-align: center;
+    margin-top: -18px;
   }
 
   h1 {

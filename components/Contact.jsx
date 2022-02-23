@@ -8,7 +8,9 @@ const Contact = () => {
       <Heading text={"Connect With Us"} />
       <div className={styles.container}>
         <div className="content">
-          <h3>Have A Request or Need A Website Design Consultations?</h3>
+          <p className={styles.h3}>
+            Have A Request or Need A Website Design Consultations?
+          </p>
           <h1>Get in touch with us and Let's Discuss on It.</h1>
           <img src={rocket.src} alt="website development agency contact" />
         </div>

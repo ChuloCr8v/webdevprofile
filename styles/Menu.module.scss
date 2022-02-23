@@ -39,16 +39,22 @@
   }
 }
 
-.menu_item {
-  color: white;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    color: #f21143;
-  }
+.menu {
+  width: 100%;
 }
 
-.menu * + * {
-  margin-top: 0.6rem;
+.menu_item {
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 5px 0;
+
+  &:hover {
+    color: #f21143;
+    background: rgb(29, 29, 29);
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 900px) {
@@ -68,6 +74,10 @@
 
   .menu_item {
     color: black;
+    &:hover {
+      background: transparent;
+      font-size: 1rem;
+    }
   }
 
   .menu * + * {
