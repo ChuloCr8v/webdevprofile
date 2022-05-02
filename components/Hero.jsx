@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.hero_img}>
-          <img src={heroImg.src} alt="best web development agency" />
+          <img src={heroImg.src} alt="best web development agency in Nigeria" />
         </div>
       </div>
     </section>
