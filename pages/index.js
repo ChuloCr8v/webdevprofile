@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import About from "../components/About";
 import Why from "../components/Why";
 import Contact from "../components/Contact";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <Services />
         <Why />
+        <Testimonials />
         <Contact />
       </main>
     </div>

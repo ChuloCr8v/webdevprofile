@@ -44,16 +44,19 @@
 }
 
 .menu_item {
-  text-align: center;
+  font-weight: 900;
+  font-size: 1.2em;
+  text-align: left;
   color: white;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  padding: 5px 0;
-
+  padding: 5px;
+  padding-left: 40px;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    color: #f21143;
-    background: rgb(29, 29, 29);
-    font-size: 1.2rem;
+    border-left: 5px red solid;
+    background: rgb(255,255,255);
+    padding-left: 30px;
+    color: black;
   }
 }
 

@@ -1,0 +1,55 @@
+@import 'General.module.scss';
+
+.testimonials {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.container {
+  width: min(90%, 80rem);
+  @include flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+}
+
+.testimony {
+  @include box;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  color: #f21143;
+  font-size: 2.5em;
+  opacity: .7;
+  transform: rotate(-35deg);
+}
+
+.comment {
+  margin-top: 25px;
+  font-size: 1.1em;
+  color: #4d4d4d;
+}
+
+.name_container {
+  border-left: 3px red solid;
+  padding-left: 15px;
+}
+
+.name {
+  margin-top: 20px;
+  color: #f21143;
+  font-size: 1em;
+}
