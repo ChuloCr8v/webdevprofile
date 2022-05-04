@@ -44,7 +44,7 @@
 }
 
 .menu_item {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 1.2em;
   text-align: left;
   color: white;
@@ -61,30 +61,34 @@
 }
 
 @media (min-width: 900px) {
+
   .nav,
   .open_nav {
     position: relative;
     background: transparent;
     height: 0;
+    right: 0;
   }
 
   .close_icon {
     display: none;
   }
+
   .menu {
     @include flex;
   }
 
   .menu_item {
-    color: black;
     &:hover {
       background: transparent;
-      font-size: 1rem;
+      text-decoration: underline;
+      padding-left: 40px;
+      border-left: none;
+      color: white;
     }
   }
 
   .menu * + * {
     margin-top: 0;
-    margin-left: 1rem;
   }
 }

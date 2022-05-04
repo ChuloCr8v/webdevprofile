@@ -24,7 +24,7 @@
   align-items: flex-start;
   background-image: linear-gradient(90deg, #f81e06, #ef086a);
   background-repeat: no-repeat;
-  max-width: 30rem;
+  max-width: 350px;
   min-height: 20rem;
   margin: 1rem;
   padding: 1.5rem;
@@ -34,14 +34,31 @@
   &:hover {
     transform: translateY(-5px);
   }
-  .icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
   h3,
   p {
     margin-bottom: 1rem;
   }
+  h3 {
+    font-size: 1.3em;
+  }
+}
+
+
+.icon_wrapper {
+  @include flex;
+  flex-direction: column;
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  border-radius: 100px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+.icon {
+  color: #191919;
+  font-size: 35px;
 }
 
 @media (min-width: 688px) {
@@ -53,7 +70,7 @@
   }
 
   .service {
-    max-width: 30rem;
-    height: 20rem;
+    max-width: 25rem;
+    height: 400px;
   }
 }

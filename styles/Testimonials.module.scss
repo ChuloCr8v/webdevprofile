@@ -4,7 +4,7 @@
   width: 100%;
   @include flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .container {
@@ -17,9 +17,14 @@
   width: 100%;
   @include flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .testimony {
+  @include flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: 200px;
   @include box;
   padding: 30px 20px;
   border-radius: 10px;
@@ -39,17 +44,25 @@
 
 .comment {
   margin-top: 25px;
-  font-size: 1.1em;
   color: #4d4d4d;
 }
 
 .name_container {
+  margin-top: 20px;
+  width: 100%;
   border-left: 3px red solid;
   padding-left: 15px;
 }
 
 .name {
-  margin-top: 20px;
   color: #f21143;
   font-size: 1em;
+}
+
+@media(min-width: 688px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }

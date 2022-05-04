@@ -1,21 +1,25 @@
-@mixin flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import 'General.module.scss';
 
 .header {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
   padding: 1rem 0;
 }
 
 .container {
   @include flex;
+  flex-direction: row;
   justify-content: space-between;
-  max-width: 85%;
-  margin: auto;
+  width: 100%;
 }
 
 @media (min-width: 900px) {
+
+  .header {
+    background: #191919;
+  }
+
   .icon {
     display: none;
   }
