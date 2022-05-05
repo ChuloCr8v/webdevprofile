@@ -11,21 +11,26 @@
   background: linear-gradient(120deg, #191919 45%, #ef086a);
   color: white;
   padding-top: 4rem;
-  img {
-    max-width: 100%;
-    height: 3rem;
-    margin: 2rem 0;
-    animation: swirl 1s infinite alternate;
-    margin-bottom: 3rem;
-  }
+}
 
-  @keyframes swirl {
-    0% {
-      transform: translateY(-1.5rem) translateX(1.5rem);
-    }
-    100% {
-      transform: translateY(0) translateX(0);
-    }
+.image_wrapper {
+  border: 2px red solid ;
+  width: 100%;
+  margin: 2rem 0;
+  margin-bottom: 3rem;
+  img {
+    width: 100%;
+    border: 2px red solid ;
+    animation: swirl 1s infinite alternate;
+  }
+}
+
+@keyframes swirl {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -42,7 +47,6 @@
     text-align: center;
     margin-top: -28px;
   }
-
   h1 {
     font-size: 1.7rem;
     margin-top: 20px;
@@ -51,6 +55,10 @@
   }
 }
 
+  .content {
+    margin-bottom: 4rem;
+  } 
+  
 @media (min-width: 688px) {
   .container {
     display: grid;

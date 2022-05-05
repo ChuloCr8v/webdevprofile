@@ -30,8 +30,7 @@ const About = ({showHeading}) => {
             they need your services.
           </h3>
           <p>
-            That's why at Clever Developers, we work hard at providing you with
-            a website that is tailored to suit your business goals, needs, as
+            This is why at Clever Developers, we work hard at providing you with a website that is tailored to suit your business goals, needs, as
             well as objectives. We pride our services on its affordability
             without any compromises on the quality of delivery.
           </p>

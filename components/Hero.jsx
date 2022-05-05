@@ -1,7 +1,7 @@
 import styles from "../styles/Hero.module.scss";
 import Link from "next/link";
 import heroImg from "../public/herobg.png";
-
+import Image from 'next/image'
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.hero_img}>
-          <img src={heroImg.src} alt="best web development agency in Nigeria" />
+          <Image src="/herobg.png" height={200} width={400} alt="best web development agency in Nigeria" />
         </div>
       </div>
     </section>

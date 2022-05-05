@@ -38,7 +38,7 @@ const Services = () => {
       <Heading text={"What we do"} />
       <div className={styles.container}>
         {service.map(item => ( 
-          <div className={styles.service}>
+          <div className={styles.service} key={item.title}>
             <div className={styles.icon_wrapper}>
               {item.icon}
             </div>

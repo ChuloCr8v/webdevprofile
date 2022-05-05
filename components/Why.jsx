@@ -34,13 +34,13 @@ const Why = () => {
       <div className={styles.container}>
         <Heading text={"Why work with us?"} />
         <div className={styles.why_container}>
-          {why.map((item) => (
-            <div className={styles.why}>
+          {why.map((item, index) => (
+            <div className={styles.why} key={index} >
               <div className={styles.icon_wrapper}>
                 {item.icon} 
               </div>
               <h3 className={styles.title}>{item.heading} </h3>
-              <p className={styles.description}>{item.description}></p>
+              <p className={styles.description}>{item.description}</p>
             </div>
           ))} 
         </div>
