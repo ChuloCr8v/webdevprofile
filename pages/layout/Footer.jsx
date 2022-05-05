@@ -5,6 +5,7 @@ import {
   FaPhoneSquare,
   FaTwitter,
 } from "react-icons/fa";
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -26,14 +27,34 @@ const Footer = () => {
           </p>
         </div>
         <nav className={styles.nav}>
-          <h2 className={styles.subheading}>Menu</h2>
-          <ol className={styles.menu}>
-            <li className={styles.menu_item}>Home</li>
-            <li className={styles.menu_item}>Services</li>
-            <li className={styles.menu_item}>About</li>
-            <li className={styles.menu_item}>Testimonials</li>
-            <li className={styles.menu_item}>Contact</li>
-          </ol>
+          <h2 className={styles.subheading}>Menu</h2><div className={styles.menu}>
+          <Link href="/">
+            <a className={styles.menu_item}>
+              Home
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className={styles.menu_item}>
+              About
+            </a>
+          </Link>
+          <Link href="/services" className={styles.menu_item}>
+            <a className={styles.menu_item}>
+              Services
+            </a>
+          </Link>
+          <Link href="/projects">
+            <a className={styles.menu_item}>
+              Projects
+            </a>
+          </Link>
+          <Link href="/contact" >
+            <a className={styles.menu_item}>
+              Contact
+            </a> 
+          </Link>
+        </div>
+          
         </nav>
         <div className={styles.contact}>
           <h2 className={styles.subheading}>Contact</h2>

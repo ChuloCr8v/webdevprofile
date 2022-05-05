@@ -13,7 +13,7 @@ const Hero = () => {
             tailored for your target audience
           </p>
           <div className={styles.btn_container}>
-            <Link className={styles.contact_link} href="#">
+            <Link className={styles.contact_link} href="/contact">
               Get Started
             </Link>
           </div>

@@ -39,20 +39,15 @@
   margin: 2rem 0;
 }
 
+.menu {
+  @include flex;
+  flex-direction: column;
+align-items: flex-start;
+}
+
 .menu_item {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  &:hover {
-    color: #f21143;
-  }
-}
-
-.menu * + * {
-  margin-top: 0.6rem;
-}
-
-.menu_item {
-  transition: all 0.3s ease-in-out;
   &:hover {
     color: #f21143;
   }

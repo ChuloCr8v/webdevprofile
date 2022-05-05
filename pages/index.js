@@ -10,6 +10,8 @@ import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
 
 export default function Home() {
+  
+  const showHeading = true
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +24,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <About />
+        <About showHeading={showHeading} />
         <Services />
         <Why />
         <Projects />

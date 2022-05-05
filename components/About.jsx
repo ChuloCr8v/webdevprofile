@@ -1,12 +1,13 @@
 import styles from "../styles/About.module.scss";
 import Heading from "./Heading";
 
-const About = () => {
+const About = ({showHeading}) => {
+  
   return (
     <section className={styles.about}>
       <div className={styles.container}>
         <div className={styles.about_us}>
-          <Heading text={"About Us"} />
+          {showHeading ?  <Heading text={"About Us"} /> : ''} 
           <h3>
             We are a website design and development agency dedicated to helping
             businesses and brands boost their online presence and increase their

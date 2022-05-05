@@ -1,0 +1,30 @@
+@import 'General.module.scss';
+
+.contact_page {
+  //  min-height: 100vh;
+  width: 100vw;
+  background: #191919;
+}
+
+.form_container {
+  @include flex;
+  flex-direction: column;
+  padding: 100px 0 50px 0;
+}
+
+.button_wrapper {
+  &:nth-child(2) {
+    margin-top: 25px;
+  }
+}
+
+.map_wrapper {
+  height: 600px;
+  width: 100%;
+}
+@media(min-width: 688px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

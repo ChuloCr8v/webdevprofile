@@ -1,5 +1,5 @@
 import styles from "../styles/Services.module.scss";
-import { FaGlobe, FaShoppingCart, FaPen } from "react-icons/fa";
+import { FaGlobe, FaShoppingCart, FaPen, FaBlog, FaSuitcase, FaNewspaper} from "react-icons/fa";
 import Heading from "./Heading";
 
 const Services = () => {
@@ -13,13 +13,24 @@ const Services = () => {
     {
       icon: <FaShoppingCart className={styles.icon} />, 
       title: 'Ecommerce Store Development ', 
-      description: 'WWe design and develop online shopping platforms for your online businesses, enabling you to target customers throughout the globe. We work with varying ecommerce platforms including WooCommerce, Shopify, BigCommerce and other platforms of your choice.'
+      description: 'We design and develop online shopping platforms for your online businesses, enabling you to target customers throughout the globe. We work with varying ecommerce platforms including WooCommerce, Shopify, BigCommerce and other platforms of your choice.'
     }, 
     {
-      icon: <FaPen className={styles.icon} />, 
-      title: 'Content Creation', 
-      description: 'We create well tailored contents suitable for passing whatever message you have for your clients to keep them enagaged as well as discover important information about your brands and services.'
+      icon: <FaBlog className={styles.icon} />, 
+      title: 'Blog Website Development', 
+      description: 'We build fast and efficient news delivery websites across all niches. Be it a news website or a personal blog website, we got you covered.'
     }, 
+    {
+      icon: <FaNewspaper className={styles.icon} />, 
+      title: 'Portfolio Website Development', 
+      description: 'whatever service you offer, we can create the perfect portfolio website to sell you across to your target audience. We will equip your portfolio website to get your profession across in the right manner.'
+    },  
+    {
+      icon: <FaSuitcase className={styles.icon} />, 
+      title: 'Landing Page Development', 
+      description: "Landing pages are essential for selling your products to your customers online. Doing the right way will deliver even better results, engagements and clients. And that's what we do at Clever Developers."
+    }, 
+
   ]
   
   return (

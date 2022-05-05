@@ -40,10 +40,13 @@
 }
 
 .menu {
+  @include flex;
+  flex-direction: column;
   width: 100%;
 }
 
 .menu_item {
+  width: 100%;
   font-weight: 400;
   font-size: 1.2em;
   text-align: left;
@@ -75,10 +78,11 @@
   }
 
   .menu {
-    @include flex;
+    flex-direction: row;
   }
 
   .menu_item {
+    font-size: 1em;
     &:hover {
       background: transparent;
       text-decoration: underline;
