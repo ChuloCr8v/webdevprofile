@@ -14,10 +14,10 @@
 }
 
 .project {
+  position: relative;
   max-width: 350px;
   min-width: 350px;
   height: 400px;
-  @include box;
   margin-top: 30px;
   overflow: hidden;
   &:hover {
@@ -28,17 +28,15 @@
 }
 
 .details {
+  background: linear-gradient(45deg, rgb(242,17,67), rgb(25,25,25));
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,0.15);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
   @include flex;
   flex-direction: column;
   padding: 20px;
-  border-radius: 10px;
   transform: translateY(100%);
   transition: all 0.3s;
+  position: relative;
 }
 
 .name,

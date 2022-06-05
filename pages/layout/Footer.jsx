@@ -6,16 +6,20 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '../../public/images/cd-logo.png'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.about}>
-          <h1>Logo</h1>
+          <div className={styles.logo_container}>
+          <Image src={Logo} height="50" width="174.4" />
+        </div>
           <p>
             <span>
-              Clever Developers, we are a website design and development company
+              We are a website design and development company
               dedicated to helping businesses and brands boost their online
               presence and increase their reach.
             </span>{" "}

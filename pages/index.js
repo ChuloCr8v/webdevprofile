@@ -8,7 +8,7 @@ import Why from "../components/Why";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Testimonials from "../components/Testimonials";
-
+import FavIcon from '../public/images/favicon.png'
 export default function Home() {
   
   const showHeading = true
@@ -20,7 +20,7 @@ export default function Home() {
           name="Clever Developers"
           content="Your best contact for all Website Developments | Wordpress Development | Ecommerce Store Development | SEO | Branding Experts etc. "
         />
-        {/*<link rel="icon" href="/logo.png" />*/}
+        <link rel="icon" href="/images/favicon.png" />
       </Head>
       <main>
         <Hero />

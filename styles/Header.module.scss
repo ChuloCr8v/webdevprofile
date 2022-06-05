@@ -4,17 +4,30 @@
   width: 100%;
   @include flex;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: .4rem 0;
   position: fixed;
-  background: #fff;
+  background: #191919;
   z-index: 99;
-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .container {
   @include flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.logo_container {
+  z-index: 299;
+}
+
+.icon {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5em;
+  &::hover {
+    color: #ef086a;
+  }
 }
 
 @media (min-width: 900px) {
