@@ -28,7 +28,7 @@
   @include box;
   padding: 30px 20px;
   border-radius: 10px;
-  margin-top: 30px;
+  margin: 20px;
   position: relative;
 }
 
@@ -61,8 +61,6 @@
 
 @media(min-width: 688px) {
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    flex-direction: row;
   }
 }

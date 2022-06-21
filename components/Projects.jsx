@@ -140,7 +140,7 @@ const Projects = () => {
           <div className={styles.wrapper}>
             {
               project.map(item => (
-                <div className={styles.project} key={item.name} style={{background: `url(${item.img})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                <div className={styles.project} key={item.title} style={{background: `url(${item.img})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                   <div className={styles.details} >
                     <h3 className={styles.name}>{item.name}</h3>
                     <p className={styles.description}>{item.description} </p>

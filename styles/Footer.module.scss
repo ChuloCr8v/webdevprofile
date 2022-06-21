@@ -20,6 +20,7 @@
 }
 
 .container {
+  width: min(90%, 80rem);
   @include flex;
   align-items: flex-start;
   flex-direction: column;
@@ -97,7 +98,6 @@ align-items: flex-start;
     align-items: center;
   }
   .container {
-    width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 5rem;
