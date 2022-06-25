@@ -1,6 +1,7 @@
 @import 'General.module.scss';
 
 .form {
+  background: white;
   max-width: 600px;
   min-width: 350px;
   padding: 2rem 1rem;
@@ -8,7 +9,6 @@
   margin: 4rem 0;
   margin-top: 1rem;
   color: #000;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
 
 }
 
@@ -24,23 +24,21 @@
   flex-direction: column;
   margin-top: 2.5rem;
   label {
-    color: white;
+    color: #191919;
     font-weight: 600;
     font-size: 1.2rem;
   }
   input,
   textarea {
-    color: white;
+    color: #191919;
     background: transparent ;
     width: 100%;
     padding: 0.6rem 0;
     border: none;
-    border-bottom: 2px white solid;
+    border-bottom: 2px  #191919 solid;
     margin-top: 1rem;
     transition: all 0.3s;
-    &:hover {
-      border-color: red;
-    }
+
     &:focus {
       outline: none;
       border-bottom: 2px red solid;

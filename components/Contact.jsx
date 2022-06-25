@@ -1,4 +1,5 @@
 import styles from "../styles/Contact.module.scss";
+import ContactCard from "./ContactCard";
 import Form from "./Form";
 import Heading from "./Heading";
 import rocket from "../public/rocket.png";
@@ -14,6 +15,7 @@ const Contact = () => {
             Have A Request or Need A Website Design Consultations?
           </p>
           <h1>Get in touch with us and let us Discuss on It.</h1>
+          <ContactCard />
         </div>
         <Form />
       </div>

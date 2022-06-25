@@ -1,0 +1,46 @@
+@import 'General.module.scss';
+
+.contact_card {
+  margin-top: 5rem;
+}
+
+.contact_item {
+  @include flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.2rem;
+}
+
+.icon_wrapper {
+  @include flex;
+  background: #191919;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  position: relative;
+  z-index: 20;
+  border: 2px lightgray solid;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.contact_detail {
+  position: relative;
+  z-index: 10;
+  margin-left: -2rem;
+  background: #191919;
+  padding: 0.5rem 2rem;
+  padding-left: 3rem;
+  border-radius: 50px;
+  font-size: 1em;
+  color: #fff;
+}
+
+@media (min-width: 688px){
+ .contact_card{
+   margin-top: 2rem;
+ }
+}
